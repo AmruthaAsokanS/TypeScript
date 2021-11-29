@@ -1,0 +1,34 @@
+body {
+    margin: 5%;
+}
+#mainDivId {
+    display: block;
+}
+#newUserDivId {
+    display: none;
+}
+#loginDivId {
+    display: none;
+}
+#optionDivId {
+    display: none;
+}
+#availableCourseDivId {
+    display: none;
+}
+#showEnrolledCourseDivId {
+    display: none;
+}
+button {
+    color: brown;
+    background-color: tan;
+    font-size: 20px;
+    border: 5px solid lightgrey;
+    padding: 6px;
+}
+input,select {
+    margin: 6px 0 6px 0;
+    padding: 5px;
+    width: 20%;
+    border: 3px solid lightgrey;
+}

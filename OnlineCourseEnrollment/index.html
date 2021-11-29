@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Online Course Enrollment</title>
+        <link rel="stylesheet" href="style/onlinecourse.css">
+        <script src="script/courseEnrollment.js"></script>
+    </head>
+    <body>
+        <div id="mainDivId">
+            <h1>Welcome</h1>
+            <button type="button" onclick="createNewUser()">New User</button>
+            <button type="button" onclick="userLogin()">Login</button>
+        </div>
+
+        <div id="newUserDivId">
+            <h3>Enter Your Details</h3>
+            <label for="userNameId">UserName</label><br>
+            <input type="text" id="userNameId" placeholder="Enter Your Name"><br>
+            <label for="ageId">Age</label><br>
+            <input type="text" id="ageId" placeholder="Enter Your Age"><br>
+            <label for="phoneNumberId">Phone Number</label><br>
+            <input type="text" id="phoneNumberId" placeholder="Enter Your Phone Number"><br>
+            <button type="button" onclick="addNewUser()">Add</button>
+        </div>
+
+        <div id="loginDivId">
+            <h3>Login</h3>
+            <label for="userId">User Id</label><br>
+            <input type="text" id="userId" placeholder="Enter Your User Id"><br>
+            <button type="button" onclick="login()">Login</button><br>
+            <h3>Available Users</h3><br>
+            <label id="availableUsersId"></label>
+        </div>
+
+        <div id="optionDivId">
+            <button type="button" onclick="availableCourse()">Available Courses</button>
+            <button type="button" onclick="enrolledCourse()">Enrolled Courses</button>
+        </div>
+
+        <div id="availableCourseDivId">
+            <h3>Enroll Your Course</h3>
+            <label for="courseListId">Course Name</label><br>
+            <select name="courseList" id="courseListId">
+                <option value="Select">Select</option>
+                <option value="C#">C#</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="TypeScript">TypeScript</option>
+            </select><br>
+            <label for="requiredDaysId"></label><br>
+            <input type="text" id="requiredDaysId" placeholder="Enter Required Days"><br>
+            <button type="button" onclick="enrollCourse()">Enroll</button>
+        </div>
+
+        <divn id="showEnrolledCourseDivId">
+            <h3>Your Enrolled Courses</h3>
+            <label id="enrolledCourseId"></label><br>
+            <label id="TotalDaysRequiredId"></label>
+        </div>
+    </body>
+</html>
